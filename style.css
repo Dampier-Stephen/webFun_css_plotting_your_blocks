@@ -1,35 +1,76 @@
 /*CSS reset settings here*/
-*{
-    margin: 0px;
-    padding: 0px;
-   }
-   #wrapper{
-    width: 950px;
-    background-color: silver;
-    margin: 0px auto;
-   }
-   #header{
-    min-height: 150px;
-    background-color: green;
-   }
-   #navigation{
-    min-height: 300px;
-    width: 200px;
-    background-color: blue;
-   }
-   #main_content{
-    min-height: 400px;
-    width: 700px;
-    background-color: red;
-   }
-   .subcontents{
-    min-height: 200px;
-    width: 210px;
-    background-color: yellow;
-   }
-   #advertisement{
-    min-height: 120px;
-    width: 660px;
-    background-color: purple;
-   }
-   
+    * {
+        /* border-box helps with layout so that padding and borders are included in width and height.  */
+        box-sizing:border-box; 
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .section {
+        display: inline-block;
+        margin:0;
+        padding: 10px 14px;
+    }
+    #wrapper{
+        background-color: silver;
+        margin: 0 auto;
+        padding: 14px 15px;
+        position:relative;
+        width: 740px;
+    }
+    #header{
+        background-color: green;
+        margin: 0 0 15px 0;
+        height: 113px;
+    }
+    #navigation{
+        background-color: blue;
+        display:inline-block;
+        min-height: 226px;
+        margin-right:15px;
+        width: 151px;
+        vertical-align: top;
+    }
+    #main_content{
+        background-color: red;
+        display:inline-block;
+        min-height: 318px;
+        padding: 13px 11px;
+        width: 540px;
+    }
+    .subcontents{
+        background-color: yellow;
+        display: inline-block;
+        height: 150px;
+        margin-right: 7px;
+        width: 158px;
+    }
+
+    .subcontents:nth-child(2) {
+        height: 150px;
+        margin-right: 6px;
+        width: 156px;
+    } 
+    #advertisement{
+        background-color: purple;
+        margin-top: 18px;
+        min-height: 88px;
+        width: 495px;
+
+    }
+
+   /*  uncomment the css here, and the img in the html to lay the image over top */
+   /*  the image has a transparent border */
+   /*  Tested only on Chrome / Mac */
+    /* img {
+        height: 500px;
+        width:768px;
+        display: block;
+        margin:0;
+        padding:0;
+        width: auto;
+        position:absolute;
+        opacity: .4;
+        top: 0;
+        left: 0;
+    } */
